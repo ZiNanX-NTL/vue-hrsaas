@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-19 10:01:33
- * @LastEditTime: 2021-07-19 20:52:27
+ * @LastEditTime: 2021-07-23 23:22:39
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \hrsaas\src\permission.js
@@ -92,8 +92,8 @@ router.beforeEach(async(to, from, next) => {
         // 如果没有id这个值 才会调用 vuex的获取资料的action
         await store.dispatch('user/getUserInfo')
         // 为什么要写await 因为我们想获取完资料再去放行
-        next() // 放行
       }
+      next() // 放行
     }
   } else {
     // 如果没有token

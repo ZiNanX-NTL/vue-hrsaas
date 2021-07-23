@@ -1,3 +1,11 @@
+<!--
+ * @Author: your name
+ * @Date: 2021-07-19 10:01:33
+ * @LastEditTime: 2021-07-21 22:56:14
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \hrsaas\src\layout\components\Sidebar\index.vue
+-->
 <template>
   <div :class="{'has-logo':showLogo}">
     <logo v-if="showLogo" :collapse="isCollapse" />

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-07-19 10:01:33
- * @LastEditTime: 2021-07-19 21:19:16
+ * @LastEditTime: 2021-08-01 21:07:37
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \hrsaas\src\store\getters.js
@@ -14,6 +14,7 @@ const getters = {
 
   name: state => state.user.userInfo.username, // 建立用户名称的映射
   userId: state => state.user.userInfo.userId, // 建立用户id的映射
-  staffPhoto: state => state.user.userInfo.staffPhoto // 建立用户头像的映射
+  staffPhoto: state => state.user.userInfo.staffPhoto, // 建立用户头像的映射
+  companyId: state => state.user.userInfo.companyId // 建立对于user模块的companyId的快捷访问
 }
 export default getters
